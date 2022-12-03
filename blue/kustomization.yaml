@@ -6,6 +6,5 @@ nameSuffix: -blue
 
 
 commonLabels:
-  app: apllication
   color: blue
   canary: stable
