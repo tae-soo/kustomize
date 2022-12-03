@@ -4,8 +4,6 @@ metadata:
   name: nginx
   labels:
     app: nginx
-    color: blue
-    canary: stable
 spec:
   strategy:
     type: Recreate
@@ -17,8 +15,6 @@ spec:
     metadata:
       labels:
         app: nginx
-        color: blue
-        canary: stable
     spec:
       containers:
       - name: nginx
