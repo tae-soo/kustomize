@@ -1,0 +1,10 @@
+resources:
+- ../base/deployment.yaml
+
+# namePrefix: 
+nameSuffix: -green
+
+
+commonLabels:
+  color: green
+  canary: stable
