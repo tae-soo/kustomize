@@ -1,5 +1,5 @@
 resources:
-- ./base/deployment.yaml
+- ../deployment.yaml
 
 # namePrefix: 
 nameSuffix: -green
