@@ -1,9 +1,2 @@
 resources:
 - deployment.yaml
-
-
-nameSuffix: -green
-
-commonLabels:
-  color: green
-  canary: stable
