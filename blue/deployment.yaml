@@ -1,21 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: rollout-nginx-blue
   labels:
-    app: nginx
+    app: rollout-nginx
+    bluegreen: blue
+    canary: stable
 spec:
+  replicas: 3
   selector:
     matchLabels:
-      app: nginx
-  replicas: 2
+      app: rollout-nginx
   template:
     metadata:
       labels:
-        app: nginx
+        app: rollout-nginx
+        bluegreen: blue
+        canary: stable
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.15.4
-        ports:
-        - containerPort: 80
+      - name: rollout-nginx
+        image: nginx:1.11
