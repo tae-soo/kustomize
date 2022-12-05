@@ -16,7 +16,7 @@ spec:
       labels:
         app: rollout-nginx
         canary: stable
-  spec:
-    containers:
-      - name: rollout-nginx
-        image: nginx:1.15.5
+    spec:
+      containers:
+        - name: rollout-nginx
+          image: nginx:1.15.5
