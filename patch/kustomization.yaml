@@ -1,6 +1,10 @@
 resources:
 - deployments.yaml
 
+
+nameSuffix: -green
+
+
 patches:
 - path: patch.yaml
   target:
