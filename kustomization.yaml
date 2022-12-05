@@ -7,7 +7,7 @@ kind: Kustomization
 nameSuffix: -green
 
 commonLabels:
-  app: application
+  app: rollout-nginx
   color: green
 
 
