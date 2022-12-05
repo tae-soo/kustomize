@@ -1,9 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rollout-nginx
+  name: rollout-nginx-blue
   labels:
     app: rollout-nginx
+    color: blue
     canary: stable
 spec:
   replicas: 3
@@ -14,8 +15,27 @@ spec:
     metadata:
       labels:
         app: rollout-nginx
+        color: blue
         canary: stable
     spec:
       containers:
       - name: rollout-nginx
         image: nginx:1.11
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc-nginx
+  labels:
+    app: rollout-nginx
+    color: blue
+spec:
+  type: LoadBalancer
+  ports:
+    - name: svc-nginx
+      port: 80
+      targetPort: 80
+  selector:
+    app: rollout-nginx
+    color: blue
