@@ -5,11 +5,11 @@ resources:
 
 namespace: kustomize
 
-#nameSuffix: -green
+nameSuffix: -blue
 
 #images:
 #- name: nginx
-#  newTag: 1.15.7
+#  newTag: 1.15.5
 
-#commonLabels:
-#  color: green
+commonLabels:
+  color: blue
