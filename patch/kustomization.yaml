@@ -8,4 +8,4 @@ patches:
 - path: patch.yaml
   target:
     kind: Deployment
-    name: deploy1
+    name: deploy1-blue
