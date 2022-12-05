@@ -13,7 +13,7 @@ commonLabels:
 
 # 컨테이너 이미지로 특정 컨테이너 구분
 images:
-- name: rollout-nginx
+- name: nginx
   newTag: 1.16 # 새로운 태그 이름
 
 resources:
