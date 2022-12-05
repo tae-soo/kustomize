@@ -2,6 +2,7 @@ resources:
 - deployment.yaml
 
 nameSuffix: -green
+nameSuffix: -s
 
 
 commonLabels:
