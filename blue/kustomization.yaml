@@ -1,17 +1,8 @@
-
 resources:
 - deployment.yaml
 
+nameSuffix: -blue
 
-nameSuffix: -green
 
 commonLabels:
-  app: rollout-nginx
-  color: green
-
-
-images:
-- name: nginx
-  newTag: 1.16.3 
-
-
+  color: blue
