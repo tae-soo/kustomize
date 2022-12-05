@@ -4,19 +4,19 @@ metadata:
   name: no-use
   labels:
     app: rollout-nginx
-    color: blue
+    color: green
 
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: rollout-nginx
-      color: blue
+      color: green
   template:
     metadata:
       labels:
         app: rollout-nginx
-        color: blue
+        color: green
     spec:
       containers:
         - name: rollout-nginx
