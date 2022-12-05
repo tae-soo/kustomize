@@ -10,7 +10,7 @@ commonLabels:
   color: green
 
 
-image:
+images:
 - name: nginx
   newTag: 1.16.3 
 
