@@ -4,6 +4,9 @@ resources:
 # namePrefix: 
 nameSuffix: -green
 
+images:
+- name: nginx
+  newTag: 1.15.6
 
 commonLabels:
   color: green
