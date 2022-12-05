@@ -7,4 +7,3 @@ patches:
   target:
     kind: Deployment
     name: deploy1
-    nameSuffix: -green
