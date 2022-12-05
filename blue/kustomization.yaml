@@ -7,7 +7,7 @@ commonLabels:
 
 
 
-images:
+image:
 - name: nginx
   newTag: 1.16 
 
