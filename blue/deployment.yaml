@@ -4,17 +4,19 @@ metadata:
   name: rollout-nginx
   labels:
     app: rollout-nginx
-    canary: stable
+    color: blue
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: rollout-nginx
+      color: blue
   template:
     metadata:
       labels:
         app: rollout-nginx
-    spec:
-      containers:
+        color: blue
+  spec:
+    containers:
       - name: rollout-nginx
         image: nginx:1.12
