@@ -14,7 +14,6 @@ spec:
     metadata:
       labels:
         app: rollout-nginx
-        canary: stable
     spec:
       containers:
       - name: rollout-nginx
