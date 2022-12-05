@@ -1,0 +1,8 @@
+resources:
+- deployments.yaml
+
+patches:
+- path: patch.yaml
+  target:
+    kind: Deployment
+    name: deploy1
