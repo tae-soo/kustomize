@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: svc-nginx
   labels:
-    app: rollout-nginx
+    app: rollout-nginx-svc
 spec:
   type: LoadBalancer
   ports:
