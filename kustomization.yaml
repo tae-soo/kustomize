@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+#namespace: kustomize-namespace
+
+# namePrefix: 
+nameSuffix: -green
+
+commonLabels:
+  app: application
+  color: green
+
+
+# 컨테이너 이미지로 특정 컨테이너 구분
+images:
+- name: nginx
+  newTag: 1.16 # 새로운 태그 이름
+
+resources:
+- deployment.yaml
