@@ -1,5 +1,7 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
+
+resources:
+- deployment.yaml
+
 
 nameSuffix: -green
 
@@ -8,10 +10,8 @@ commonLabels:
   color: green
 
 
-
 image:
 - name: nginx
-  newTag: 1.16 
+  newTag: 1.16.3 
 
-resources:
-- deployment.yaml
+
