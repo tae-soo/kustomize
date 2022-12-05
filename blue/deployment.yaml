@@ -4,18 +4,15 @@ metadata:
   name: rollout-nginx
   labels:
     app: rollout-nginx
-    canary: stable
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: rollout-nginx
-      canary: stable
   template:
     metadata:
       labels:
         app: rollout-nginx
-        canary: stable
     spec:
       containers:
         - name: rollout-nginx
