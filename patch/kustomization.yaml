@@ -4,6 +4,7 @@ resources:
 
 nameSuffix: -blue
 
+
 patches:
 - path: patch.yaml
   target:
