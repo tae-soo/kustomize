@@ -1,15 +1,14 @@
 resources:
 - deployment.yaml
-- deployment2.yaml
 - service.yaml
 
 namespace: kustomize
 
 nameSuffix: -blue
 
-#images:
-#- name: nginx
-#  newTag: 1.15.5
+images:
+- name: nginx
+  newTag: 1.15.5
 
 commonLabels:
   color: blue
