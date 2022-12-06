@@ -1,0 +1,9 @@
+resources:
+- deployment.yaml
+- service.yaml
+
+nameSuffix: -blue
+
+
+commonLabels:
+  color: blue
